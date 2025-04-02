@@ -42,7 +42,7 @@ const Footer = () => {
   );
 };
 
-const FooterLink = ({ href, text }: { href: string, text: string }) => (
+const FooterLink = ({ href, text }) => (
   <li>
     <a 
       href={href} 

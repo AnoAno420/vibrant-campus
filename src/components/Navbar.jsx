@@ -61,7 +61,7 @@ const Navbar = () => {
   );
 };
 
-const NavLinks = ({ mobile = false }: { mobile?: boolean }) => {
+const NavLinks = ({ mobile = false }) => {
   const baseClasses = "text-white hover:text-club-orange transition-colors";
   const classes = mobile ? `${baseClasses} block py-2` : baseClasses;
   

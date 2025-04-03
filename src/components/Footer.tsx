@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,9 +10,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <a href="/" className="inline-block mb-4">
+            <Link to="/" className="inline-block mb-4">
               <h3 className="text-2xl font-bold text-club-orange">VITKULT</h3>
-            </a>
+            </Link>
             <p className="text-gray-400 mb-6 max-w-md">
               Empowering students through technology, innovation, and community building since 2020.
             </p>
@@ -42,7 +43,7 @@ const Footer = () => {
   );
 };
 
-const FooterLink = ({ href, text }) => (
+const FooterLink = ({ href, text }: { href: string, text: string }) => (
   <li>
     <a 
       href={href} 

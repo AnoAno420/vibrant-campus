@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Calendar } from 'lucide-react';
-import { upcomingEvents } from '@/data/events';
+import { upcomingEvents, Event } from '@/data/events';
 
 const EventsSection = () => {
   return (
@@ -25,7 +25,7 @@ const EventsSection = () => {
   );
 };
 
-const EventCard = ({ event }) => {
+const EventCard = ({ event }: { event: Event }) => {
   return (
     <Card className="bg-gradient-to-br from-[#1A1A1A] to-[#0D0D0D] border border-club-orange/10 overflow-hidden hover:shadow-lg hover:shadow-club-orange/10 transition-transform duration-300 hover:-translate-y-2">
       <div className="h-40 bg-gradient-to-br from-club-orange-light to-club-orange relative">

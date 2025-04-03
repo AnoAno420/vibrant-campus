@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,11 +26,11 @@ const Navbar = () => {
       isScrolled ? 'bg-club-dark shadow-lg' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="/" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <h1 className="text-2xl font-bold text-club-orange">
             VITKULT
           </h1>
-        </a>
+        </Link>
         
         <div className="hidden md:flex items-center space-x-6">
           <NavLinks />
@@ -61,7 +62,7 @@ const Navbar = () => {
   );
 };
 
-const NavLinks = ({ mobile = false }) => {
+const NavLinks = ({ mobile = false }: { mobile?: boolean }) => {
   const baseClasses = "text-white hover:text-club-orange transition-colors";
   const classes = mobile ? `${baseClasses} block py-2` : baseClasses;
   

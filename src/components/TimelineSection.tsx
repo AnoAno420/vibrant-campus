@@ -31,7 +31,11 @@ const TimelineSection = () => {
   );
 };
 
-const TimelineItem = ({ event, isLeft, position }) => {
+const TimelineItem = ({ event, isLeft, position }: { 
+  event: any, 
+  isLeft: boolean,
+  position: string 
+}) => {
   return (
     <div 
       className={`relative mb-24 flex ${isLeft ? 'justify-start' : 'justify-end'} animate-fade-in`}

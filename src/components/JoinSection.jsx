@@ -45,13 +45,7 @@ const JoinSection = () => {
   );
 };
 
-const SocialCard = ({ platform, icon, description, link, color }: { 
-  platform: string, 
-  icon: React.ReactNode,
-  description: string,
-  link: string,
-  color: string
-}) => {
+const SocialCard = ({ platform, icon, description, link, color }) => {
   return (
     <div className="flex-1 border border-club-orange/20 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-club-orange/10 transition-all duration-300 bg-[#1A1A1A]">
       <div className="p-8 flex flex-col items-center">

@@ -24,7 +24,7 @@ const TeamSection = () => {
   );
 };
 
-const TeamMemberCard = ({ member }: { member: any }) => {
+const TeamMemberCard = ({ member }) => {
   return (
     <div className="bg-[#0D0D0D] border border-club-orange/10 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-club-orange/10 transition-transform duration-300 hover:-translate-y-2">
       <div className="p-4 flex flex-col items-center">
@@ -34,7 +34,7 @@ const TeamMemberCard = ({ member }: { member: any }) => {
               <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
             ) : (
               <span className="text-xl font-bold">
-                {member.name.split(' ').map((n: string) => n[0]).join('')}
+                {member.name.split(' ').map((n) => n[0]).join('')}
               </span>
             )}
           </div>

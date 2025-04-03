@@ -32,7 +32,7 @@ const AboutSection = () => {
   );
 };
 
-const InfoCard = ({ title, description }: { title: string, description: string }) => {
+const InfoCard = ({ title, description }) => {
   return (
     <Card className="bg-[#1A1A1A] border-club-orange border-opacity-20 overflow-hidden hover:shadow-lg hover:shadow-club-orange/10 transition-all duration-300">
       <CardContent className="p-6">
